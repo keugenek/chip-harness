@@ -1,0 +1,42 @@
+
+10. Printing statistics.
+
+=== dot_s8 ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+     9258        - wires
+    10158        - wire bits
+        8        - public wires
+      908        - public wire bits
+        5        - ports
+      455        - port bits
+     9722 1.21E+05 cells
+      331  4.2E+03   sg13g2_a21o_1
+      784 7.11E+03   sg13g2_a21oi_1
+      528 5.73E+03   sg13g2_a22oi_1
+      357 3.24E+03   sg13g2_and2_1
+       81 1.03E+03   sg13g2_and3_1
+       12  174.182   sg13g2_and4_1
+      452 2.21E+04   sg13g2_dfrbpq_1
+      242 1.32E+03   sg13g2_inv_1
+       43  780.192   sg13g2_mux2_1
+     1079  7830.95   sg13g2_nand2_1
+      449 4.07E+03   sg13g2_nand2b_1
+      520  4717.44   sg13g2_nand3_1
+        1   12.701   sg13g2_nand3b_1
+        1   10.886   sg13g2_nand4_1
+      635 4.61E+03   sg13g2_nor2_1
+      423 3.84E+03   sg13g2_nor2b_1
+       80   725.76   sg13g2_nor3_1
+        3   32.659   sg13g2_nor4_1
+      636 5.77E+03   sg13g2_o21ai_1
+       81  734.832   sg13g2_or2_1
+      121 1.54E+03   sg13g2_or3_1
+     1692 2.46E+04   sg13g2_xnor2_1
+     1171  1.7E+04   sg13g2_xor2_1
+
+   Chip area for module '\dot_s8': 121174.704000
+     of which used for sequential elements: 22142.937600 (18.27%)
+

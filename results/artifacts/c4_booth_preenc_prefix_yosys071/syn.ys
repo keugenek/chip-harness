@@ -1,0 +1,13 @@
+
+read_verilog /home/claude/forge/work/c4_booth_preenc_prefix_yosys071/design.v;  hierarchy -top dot_s8
+synth -top dot_s8 -flatten 
+opt -purge
+dfflibmap -liberty /home/claude/forge/pdk/sg13g2_stdcell_typ_1p20V_25C.lib
+design -save premap
+
+design -load premap
+abc -liberty /home/claude/forge/pdk/sg13g2_stdcell_typ_1p20V_25C.lib 
+opt_clean -purge
+hilomap -hicell sg13g2_tiehi L_HI -locell sg13g2_tielo L_LO
+tee -o syn_area.stat stat -liberty /home/claude/forge/pdk/sg13g2_stdcell_typ_1p20V_25C.lib
+write_verilog -noattr -noexpr -nohex -nodec syn_area.v

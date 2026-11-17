@@ -1,0 +1,59 @@
+{
+ "candidate": "c1_bw_dadda_yosys071",
+ "taps": 27,
+ "pdk": "IHP SG13G2 (typ 1.2V 25C)",
+ "synth_tool": "yowasp-yosys",
+ "stages": {
+  "lint": {
+   "errors": 0,
+   "warnings": 0,
+   "sec": 1.0,
+   "detail": ""
+  },
+  "rtl_sim": {
+   "checked": 5330,
+   "errors": 0,
+   "sec": 7.3,
+   "detail": ""
+  },
+  "formal": [
+   {
+    "taps": 1,
+    "proved": true,
+    "sec": 39.6,
+    "detail": ""
+   }
+  ]
+ },
+ "status": "PASS",
+ "rtl_lines": 6894,
+ "points": {
+  "area": {
+   "synth": {
+    "area_um2": 121631.4,
+    "cells": 9781,
+    "flops": 453,
+    "netlist": "syn_area.v"
+   },
+   "gate_sim": {
+    "checked": 4306,
+    "errors": 0,
+    "sec": 0.1,
+    "detail": "",
+    "build_sec": 44.4
+   },
+   "sta": {
+    "period_ns": 10.0,
+    "worst_slack_ns": 4.807,
+    "min_period_ns": 5.193,
+    "power_mw": 6.73,
+    "power_internal_mw": 4.66,
+    "power_switching_mw": 2.07,
+    "power_leakage_mw": 0.00152,
+    "activity": "gate-level VCD (conv stimulus)"
+   },
+   "energy_per_op_pj": 67.3
+  }
+ },
+ "synth_sec": 386.5
+}

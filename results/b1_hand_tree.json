@@ -1,0 +1,67 @@
+{
+ "candidate": "b1_hand_tree",
+ "taps": 27,
+ "pdk": "IHP SG13G2 (typ 1.2V 25C)",
+ "stages": {
+  "lint": {
+   "errors": 0,
+   "warnings": 6,
+   "sec": 0.1,
+   "detail": ""
+  },
+  "rtl_sim": {
+   "checked": 5330,
+   "errors": 0,
+   "sec": 0.3,
+   "detail": ""
+  },
+  "formal": [
+   {
+    "taps": 1,
+    "proved": true,
+    "sec": 0.1,
+    "detail": ""
+   },
+   {
+    "taps": 2,
+    "proved": true,
+    "sec": 0.6,
+    "detail": ""
+   }
+  ]
+ },
+ "status": "PASS",
+ "rtl_lines": 39,
+ "points": {
+  "area": {
+   "synth": {
+    "area_um2": 165790.4,
+    "cells": 13900,
+    "flops": 453,
+    "netlist": "syn_area.v"
+   },
+   "gate_sim": {
+    "checked": 4306,
+    "errors": 0,
+    "sec": 0.1,
+    "detail": "",
+    "build_sec": 55.8
+   },
+   "sta": {
+    "period_ns": 10.0,
+    "worst_slack_ns": 3.435,
+    "min_period_ns": 6.565,
+    "power_mw": 8.09,
+    "power_internal_mw": 5.33,
+    "power_switching_mw": 2.76,
+    "power_leakage_mw": 0.00209,
+    "activity": "gate-level VCD (conv stimulus)"
+   },
+   "energy_per_op_pj": 80.9
+  }
+ },
+ "synth_sec": 2236.2,
+ "notes": [
+  "an ABC delay-target run was dropped: it produced a byte-identical netlist to the area run in Yosys 0.33"
+ ]
+}

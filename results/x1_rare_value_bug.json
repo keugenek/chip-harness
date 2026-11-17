@@ -1,0 +1,30 @@
+{
+ "candidate": "x1_rare_value_bug",
+ "taps": 27,
+ "pdk": "IHP SG13G2 (typ 1.2V 25C)",
+ "synth_tool": "yosys",
+ "stages": {
+  "lint": {
+   "errors": 0,
+   "warnings": 0,
+   "sec": 0.1,
+   "detail": ""
+  },
+  "rtl_sim": {
+   "checked": 5330,
+   "errors": 0,
+   "sec": 0.2,
+   "detail": ""
+  },
+  "formal": [
+   {
+    "taps": 1,
+    "proved": false,
+    "sec": 0.1,
+    "detail": "h 2 **\n\nSetting up time step 3:\nFinal constraint equation: { } = { }\nImported 16 cells to SAT database.\nImport proof-constraint: \\trigger = 1'0\nFinal proof equation: \\trigger = 1'0\n\n[base case 2] Solving problem with 11051 variables and 32126 clauses..\nERROR: Called with -verify and proof did fail!\n"
+   }
+  ]
+ },
+ "status": "REJECTED@formal",
+ "rtl_lines": 17
+}

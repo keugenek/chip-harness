@@ -1,0 +1,22 @@
+{
+ "candidate": "x2_swapped_taps",
+ "taps": 27,
+ "pdk": "IHP SG13G2 (typ 1.2V 25C)",
+ "synth_tool": "yosys",
+ "stages": {
+  "lint": {
+   "errors": 0,
+   "warnings": 0,
+   "sec": 0.1,
+   "detail": ""
+  },
+  "rtl_sim": {
+   "checked": 5330,
+   "errors": 5116,
+   "sec": 0.3,
+   "detail": "1].\nMISMATCH vec 25: got 1f43fc exp 1f447d\nMISMATCH vec 26: got 00417f exp 00017f\nMISMATCH vec 27: got 003d83 exp 003c81\nMISMATCH vec 28: got 003f80 exp 00be01\nMISMATCH vec 30: got 00be83 exp 007e03\nRESULT checked=5330 errors=5116\n/home/claude/forge/harness/tb.v:37: $finish called at 53350000 (1ps)\n"
+  }
+ },
+ "status": "REJECTED@rtl_sim",
+ "rtl_lines": 18
+}

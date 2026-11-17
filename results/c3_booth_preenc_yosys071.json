@@ -1,0 +1,62 @@
+{
+ "candidate": "c3_booth_preenc_yosys071",
+ "taps": 27,
+ "pdk": "IHP SG13G2 (typ 1.2V 25C)",
+ "synth_tool": "yowasp-yosys",
+ "stages": {
+  "lint": {
+   "errors": 0,
+   "warnings": 0,
+   "sec": 0.8,
+   "detail": ""
+  },
+  "rtl_sim": {
+   "checked": 5330,
+   "errors": 0,
+   "sec": 8.3,
+   "detail": ""
+  },
+  "formal": [
+   {
+    "taps": 1,
+    "proved": true,
+    "sec": 67.5,
+    "detail": ""
+   }
+  ]
+ },
+ "status": "PASS",
+ "rtl_lines": 4608,
+ "points": {
+  "area": {
+   "synth": {
+    "area_um2": 109475.3,
+    "cells": 7707,
+    "flops": 561,
+    "netlist": "syn_area.v"
+   },
+   "gate_sim": {
+    "checked": 4306,
+    "errors": 0,
+    "sec": 0.1,
+    "detail": "",
+    "build_sec": 36.0
+   },
+   "sta": {
+    "period_ns": 10.0,
+    "worst_slack_ns": 4.703,
+    "min_period_ns": 5.297,
+    "power_mw": 6.71,
+    "power_internal_mw": 5.06,
+    "power_switching_mw": 1.65,
+    "power_leakage_mw": 0.00137,
+    "activity": "gate-level VCD (conv stimulus)"
+   },
+   "energy_per_op_pj": 67.1
+  }
+ },
+ "synth_sec": 6.0,
+ "notes": [
+  "flop count re-parsed from the synthesis report after a parser fix"
+ ]
+}

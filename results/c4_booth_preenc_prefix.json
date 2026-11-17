@@ -1,0 +1,59 @@
+{
+ "candidate": "c4_booth_preenc_prefix",
+ "taps": 27,
+ "pdk": "IHP SG13G2 (typ 1.2V 25C)",
+ "synth_tool": "yosys",
+ "stages": {
+  "lint": {
+   "errors": 0,
+   "warnings": 0,
+   "sec": 0.8,
+   "detail": ""
+  },
+  "rtl_sim": {
+   "checked": 5330,
+   "errors": 0,
+   "sec": 8.6,
+   "detail": ""
+  },
+  "formal": [
+   {
+    "taps": 1,
+    "proved": true,
+    "sec": 50.4,
+    "detail": ""
+   }
+  ]
+ },
+ "status": "PASS",
+ "rtl_lines": 4754,
+ "points": {
+  "area": {
+   "synth": {
+    "area_um2": 109205.1,
+    "cells": 7755,
+    "flops": 561,
+    "netlist": "syn_area.v"
+   },
+   "gate_sim": {
+    "checked": 4306,
+    "errors": 0,
+    "sec": 0.1,
+    "detail": "",
+    "build_sec": 39.0
+   },
+   "sta": {
+    "period_ns": 10.0,
+    "worst_slack_ns": 4.878,
+    "min_period_ns": 5.122,
+    "power_mw": 6.69,
+    "power_internal_mw": 5.03,
+    "power_switching_mw": 1.66,
+    "power_leakage_mw": 0.00137,
+    "activity": "gate-level VCD (conv stimulus)"
+   },
+   "energy_per_op_pj": 66.9
+  }
+ },
+ "synth_sec": 11.9
+}
