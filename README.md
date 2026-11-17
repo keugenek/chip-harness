@@ -157,3 +157,8 @@ routed design. Run on the best agent design (C4, Yosys 0.71 netlist):
 
 Outputs are in `results/layout/` (the routed design file is gzipped). Not included: power grid, timing repair, fill, signoff checks. The baseline has
 not been routed, so the timing comparison in the results tables is pre-layout only.
+
+## Licence
+
+Apache License 2.0, see `LICENSE` and `NOTICE`. The files under `pdk/` come from the IHP Open PDK, also Apache 2.0;
+`pdk/NOTICE` lists them.

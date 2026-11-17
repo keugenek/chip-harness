@@ -1,0 +1,8 @@
+chip-harness
+Copyright 2026 the chip-harness authors
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
+
+This repository vendors unmodified files from the IHP Open PDK
+(https://github.com/IHP-GmbH/IHP-Open-PDK, Apache License 2.0) under pdk/.
+See pdk/NOTICE for the list.
